@@ -99,7 +99,7 @@
                 $.proxy(matchers.matchByNormalizedQuery, { stopwords: ADDRESS_STOPWORDS }),
                 $.proxy(matchers.matchByWordsAddress, { stopwords: ADDRESS_STOPWORDS })
             ],
-            boundsAvailable: ['region', 'area', 'city', 'settlement', 'street', 'house'],
+            boundsAvailable: ['region', 'area', 'city', 'settlement', 'street', 'house', 'flat'],
             boundsFields: {
                 'region': ['region', 'region_type', 'region_type_full', 'region_with_type'],
                 'area': ['area', 'area_type', 'area_type_full', 'area_with_type'],
@@ -107,7 +107,8 @@
                 'settlement': ['settlement', 'settlement_type', 'settlement_type_full', 'settlement_with_type'],
                 'street': ['street', 'street_type', 'street_type_full', 'street_with_type'],
                 'house': ['house', 'house_type', 'house_type_full',
-                    'block', 'block_type']
+                    'block', 'block_type'],
+                'flat': ['flat', 'flat_type', 'flat_type_full']
             },
             unformattableTokens: ADDRESS_STOPWORDS,
             enrichmentEnabled: true,
